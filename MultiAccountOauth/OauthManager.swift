@@ -40,7 +40,7 @@ public class OauthManager: DynamicStorage {
         return nil
     }
     
-    var redirectURL: String {
+    public var redirectURL: String {
         return "\(urlScheme):/oauthredirect"
     }
     
