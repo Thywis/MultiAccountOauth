@@ -81,6 +81,13 @@ public class OauthManager: DynamicStorage {
         }
     }
     
+    public func backgroundSigninUserSilently(refresh_token: String, completion: @escaping ((_ success: Bool, _ result: JSON) -> ())) {
+        let refreshRequest = OIDTokenRequest(configuration: getConfiguration(), grantType: OIDGrantTypeRefreshToken, authorizationCode: nil, redirectURL: URL(string: OauthManager.sharedInstance.redirectURL)!, clientID: OauthManager.sharedInstance.cliendId, clientSecret: nil, scopes: OauthManager.sharedInstance.scope, refreshToken: refresh_token, codeVerifier: nil, additionalParameters: nil)
+        ExternalRequest.sendExternalURLRequest(urlRequest: refreshRequest.urlRequest(), completion: { (result) in
+            completion(result["error"] == JSON.null, result)
+        })
+    }
+    
     func getConfiguration() -> OIDServiceConfiguration {
         let authorizationEndpoint = URL(string: "https://accounts.google.com/o/oauth2/v2/auth")
         let tokenEndpoint = URL(string: "https://www.googleapis.com/oauth2/v4/token")
