@@ -16,25 +16,52 @@ pod 'MultiAccountOAuth'
 * Xcode 8.0+
 * iOS 9.0+, OSX 10.10+
 
-### Step by Step Guide
+### Usage
+
+## Login to an Google Account
+
+```swift
+public func signin(controller: UIViewController, completion: ((_ success: Bool, _ user: GoogleUserInstance?, _ error: String?) -> ())?)
+```
+
+## Login to multiple Google accounts
+
+```swift
+public func signin(controller: UIViewController, completion: ((_ success: Bool, _ user: GoogleUserInstance?, _ error: String?) -> ())?)
+```
+
+## Get access to all of them 
+
+```swift
+public var authenticatedUsers = [GoogleUserInstance]()
+```
+
+## Next time when the user launches the app, sign in to all the Google accounts from background.
+
+```swift
+public func signinAllUsersSilently(completion: @escaping ()->() = {})
+```
+
+
+### Step by Step Setup Guide
 
 ## 1. Google Credential
 
 * Create an iOS Applicaiton in Google API Console. Make sure you have the correct client id and URL scheme.
 
-<img src="img/instruction1" width="888" height="194"/>
+<img src="img/instruction1.png" width="888" height="194"/>
 
 * Go to Info.plist in your iOS application, add the URL scheme to URL types.
 
-<img src="img/instruction2" width="1080" height="99"/>
+<img src="img/instruction2.png" width="1080" height="99"/>
 
 ## 2. AppDelegate.swift
 
-Add you google client id and url Scheme to the framework. You can also provide a server client if you'd like to enable backend access
+Configure the google client id and URL scheme. You can optionally provide a server client id if you'd like to enable backend sever access.
 
 ```swift
 import UIKit
-import MultiAccountOauth
+import MultiAccountOAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -61,8 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ```
 
+### The list of Google Scopes to choose from
 
-
-### Scopes
-https://developers.google.com/identity/protocols/googlescopes
+* https://developers.google.com/identity/protocols/googlescopes
 

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MultiAccountOauth
+import MultiAccountOAuth
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 

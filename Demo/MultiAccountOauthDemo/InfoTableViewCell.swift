@@ -8,7 +8,7 @@
 //
 
 import UIKit
-import MultiAccountOauth
+import MultiAccountOAuth
 import RandomColorSwift
 
 class InfoTableViewCell: UITableViewCell {

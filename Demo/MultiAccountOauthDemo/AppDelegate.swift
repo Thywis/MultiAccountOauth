@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MultiAccountOauth
+import MultiAccountOAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
