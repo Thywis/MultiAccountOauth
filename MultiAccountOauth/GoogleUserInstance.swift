@@ -10,10 +10,13 @@ public struct GoogleUserInstance {
 
     public var email: String
     public var name: String
+    public var familyName: String
+    public var firstName: String
+    public var locale: String
     public var id: String
     public var profile: String
-    public var refresh_token: String
-    public var id_token: String
-    public var access_token: String
-    public var server_token: String?
+    public var refreshToken: String
+    public var idToken: String
+    public var accessToken: String
+    public var serverToken: String?
 }
