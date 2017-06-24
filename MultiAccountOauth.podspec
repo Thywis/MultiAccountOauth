@@ -18,20 +18,7 @@ Pod::Spec.new do |s|
   s.description      = "While developing [PickedMail - The personal AI Inbox](https://itunes.apple.com/us/app/pickedmail/id1244830423?mt=8), we need to support user login to multiple Google accounts simultaneously. However, Google iOS SDK only allows user to sign in to one account at a time. As a result, we developed a framework to allow us to sign in and maintain connection status to multiple Google accounts. This framework is open sourced to help others who struggling through the same problem."
 
   s.homepage         = "https://github.com/Thywis/MultiAccountOauth"
-s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-LICENSE
-}
+  s.license          = 'MIT'
   s.author           = { "likedan" => "likedan5@icloud.com" }
   s.source           = { :git => "https://github.com/Thywis/MultiAccountOauth.git", :tag => "1.0.0" }
    s.social_media_url = 'https://itunes.apple.com/us/app/pickedmail/id1244830423?mt=8'
