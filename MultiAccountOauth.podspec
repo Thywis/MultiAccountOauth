@@ -34,9 +34,9 @@ LICENSE
 }
   s.author           = { "likedan" => "likedan5@icloud.com" }
   s.source           = { :git => "https://github.com/Thywis/MultiAccountOauth.git", :tag => "1.0.0" }
-   s.social_media_url = 'https://thywis.com'
+   s.social_media_url = 'https://itunes.apple.com/us/app/pickedmail/id1244830423?mt=8'
 
-  s.platform     = :ios, '10.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
   s.dependency 'AppAuth', '~> 0.9.1'
   s.dependency 'SwiftyJSON', '~> 3.1.4'
