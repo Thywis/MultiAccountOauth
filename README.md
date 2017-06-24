@@ -1,6 +1,6 @@
-# MultiAccountOauth
+# MultiAccountOAuth
 
-MultiAccountOauth allows you to login to multiple Google accounts or any other OAuth service. 
+MultiAccountOAuth allows you to login to multiple Google OAuth accounts simultaneouly. 
 
 <img src="img/screenshot.png" width="375" height="667"/>
 
