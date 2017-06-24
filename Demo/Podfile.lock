@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.5.0)
   - AppAuth (0.9.1)
-  - MultiAccountOauth (1.0):
+  - MultiAccountOAuth (1.0):
     - Alamofire (~> 4.5.0)
     - AppAuth (~> 0.9.1)
     - SwiftyJSON (~> 3.1.4)
@@ -9,20 +9,20 @@ PODS:
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - MultiAccountOauth (from `../`)
+  - MultiAccountOAuth (from `../`)
   - RandomColorSwift
 
 EXTERNAL SOURCES:
-  MultiAccountOauth:
+  MultiAccountOAuth:
     :path: "../"
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AppAuth: f7d9a2ce4ffe79a62a8b0c1d0938e88d9809b846
-  MultiAccountOauth: 312ad001589e2191cebd18bc3086092e9beba8ef
+  MultiAccountOAuth: f884707f76cd17116af859ea1f22e2534a265a4e
   RandomColorSwift: 9f85058b721665d52d239ca166a913e083506444
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 65f6f075c927a4cdc00b1b41fc773ad0fbef1555
+PODFILE CHECKSUM: 6d150c46156a0dcf369bf70e112a5e10af4c9ad6
 
 COCOAPODS: 1.2.1
