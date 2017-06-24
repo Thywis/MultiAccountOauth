@@ -5,6 +5,8 @@ target 'MultiAccountOauthDemo' do
 
 
   pod 'MultiAccountOauth', :path => '../'
+  pod 'RandomColorSwift'
+
   use_frameworks!
 
   target 'MultiAccountOauthDemoTests' do

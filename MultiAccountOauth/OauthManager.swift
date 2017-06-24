@@ -30,13 +30,16 @@ public class OauthManager: DynamicStorage {
         if scope.contains("profile") == false {
             self.scope.append("profile")
         }
+        if scope.contains("openid") == false {
+            self.scope.append("openid")
+        }
         self.urlScheme = urlScheme
         self.serverClientId = serverCliendId
     }
     
-    public func userWithEmail(email: String) -> GoogleUserInstance? {
+    public func userWithId(id: String) -> GoogleUserInstance? {
         for user in authenticatedUsers{
-            if user.email == email {
+            if user.id == id {
                 return user
             }
         }
@@ -47,11 +50,11 @@ public class OauthManager: DynamicStorage {
         return "\(urlScheme):/oauthredirect"
     }
     
-    public func signOutUser(email: String) {
+    public func signOutUser(id: String) {
         var index = 0
         for user in authenticatedUsers {
-            if user.email == email {
-                signinUsersRefreshToken[email] = nil
+            if user.id == id {
+                signinUsersRefreshToken[id] = nil
                 authenticatedUsers.remove(at: index)
                 return
             }
@@ -80,10 +83,9 @@ public class OauthManager: DynamicStorage {
                 let accessToken = state?.value(forKey: "accessToken")! as! String
                 ExternalRequest.sendExternalRequest(url: "https://www.googleapis.com/oauth2/v2/userinfo", method: .get, param: ["access_token": accessToken as AnyObject, "alt": "json" as AnyObject], completion: { (json) in
                     if json["error"] == JSON.null {
-                        let email = json["email"].stringValue
-                        self.signinUsersRefreshToken[email] = refreshToken!
-                        let instance = GoogleUserInstance(email: email, name: json["name"].stringValue, familyName: json["family_name"].stringValue, firstName: json["given_name"].stringValue, locale: json["locale"].stringValue, id: json["id"].stringValue, profile: json["picture"].stringValue, refreshToken: refreshToken!, idToken: idToken, accessToken: accessToken, serverToken: serverToken)
-                        if self.userWithEmail(email: email) == nil {
+                        self.signinUsersRefreshToken[json["id"].stringValue] = refreshToken!
+                        let instance = GoogleUserInstance(email: json["email"].stringValue, name: json["name"].stringValue, familyName: json["family_name"].stringValue, firstName: json["given_name"].stringValue, locale: json["locale"].stringValue, id: json["id"].stringValue, profile: json["picture"].stringValue, refreshToken: refreshToken!, idToken: idToken, accessToken: accessToken, serverToken: serverToken)
+                        if self.userWithId(id: instance.id) == nil {
                             self.authenticatedUsers.append(instance)
                         }
                         completion?(true, instance, nil)
@@ -118,10 +120,9 @@ public class OauthManager: DynamicStorage {
                 let access_token = result["access_token"].stringValue
                 ExternalRequest.sendExternalRequest(url: "https://www.googleapis.com/oauth2/v2/userinfo", method: .get, param: ["access_token": access_token as AnyObject, "alt": "json" as AnyObject], completion: { (json) in
                     if json["error"] == JSON.null {
-                        let email = json["email"].stringValue
-                        self.signinUsersRefreshToken[email] = refresh_token
-                        let instance = GoogleUserInstance(email: email, name: json["name"].stringValue, familyName: json["family_name"].stringValue, firstName: json["given_name"].stringValue, locale: json["locale"].stringValue, id: json["id"].stringValue, profile: json["picture"].stringValue, refreshToken: refresh_token, idToken: id_token, accessToken: access_token, serverToken: nil)
-                        if self.userWithEmail(email: email) == nil {
+                        self.signinUsersRefreshToken[json["id"].stringValue] = refresh_token
+                        let instance = GoogleUserInstance(email: json["email"].stringValue, name: json["name"].stringValue, familyName: json["family_name"].stringValue, firstName: json["given_name"].stringValue, locale: json["locale"].stringValue, id: json["id"].stringValue, profile: json["picture"].stringValue, refreshToken: refresh_token, idToken: id_token, accessToken: access_token, serverToken: nil)
+                        if self.userWithId(id: instance.id) == nil {
                             self.authenticatedUsers.append(instance)
                         }
                         completion?(true, instance, nil)

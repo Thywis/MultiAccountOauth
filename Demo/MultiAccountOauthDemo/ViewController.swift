@@ -18,6 +18,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         loginButton.layer.cornerRadius = 5
         loginButton.clipsToBounds = true
+        
+        OauthManager.sharedInstance.signinAllUsersSilently {
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func login(_ sender: Any) {
@@ -29,20 +33,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? InfoTableViewCell {
             let authUser = OauthManager.sharedInstance.authenticatedUsers[indexPath.row]
-            cell.name.text = authUser.name
-            cell.email.text = authUser.email
-            let url = URL(string: authUser.profile)
-            let data = try? Data(contentsOf: url!)
-            if let imageData = data {
-                let image = UIImage(data: imageData)
-                cell.profile.image = image
-            }
+            cell.setDisplay(user: authUser)
+            return cell
         }
         return UITableViewCell()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return OauthManager.sharedInstance.authenticatedUsers.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
     }
     
 }
