@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.5.0)
+  - AppAuth (0.9.1)
+  - MultiAccountOauth (1.0):
+    - Alamofire (~> 4.5.0)
+    - AppAuth (~> 0.9.1)
+    - SwiftyJSON (~> 3.1.4)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - MultiAccountOauth (from `../`)
+
+EXTERNAL SOURCES:
+  MultiAccountOauth:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AppAuth: f7d9a2ce4ffe79a62a8b0c1d0938e88d9809b846
+  MultiAccountOauth: 312ad001589e2191cebd18bc3086092e9beba8ef
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 77a56e173a381fb50ecde54af05dd650c99cc94b
+
+COCOAPODS: 1.2.1

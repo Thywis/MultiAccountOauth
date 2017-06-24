@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51EED278606142C667ABD520 /* Pods_MultiAccountOauthDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA76CD81FEDBB4B38443990 /* Pods_MultiAccountOauthDemo.framework */; };
+		53DB57FA1EFDFF3900D71C93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB57F91EFDFF3900D71C93 /* AppDelegate.swift */; };
+		53DB57FC1EFDFF3900D71C93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB57FB1EFDFF3900D71C93 /* ViewController.swift */; };
+		53DB57FF1EFDFF3900D71C93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DB57FD1EFDFF3900D71C93 /* Main.storyboard */; };
+		53DB58011EFDFF3900D71C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DB58001EFDFF3900D71C93 /* Assets.xcassets */; };
+		53DB58041EFDFF3900D71C93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DB58021EFDFF3900D71C93 /* LaunchScreen.storyboard */; };
+		53DB580F1EFDFF3900D71C93 /* MultiAccountOauthDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB580E1EFDFF3900D71C93 /* MultiAccountOauthDemoTests.swift */; };
+		53DB581A1EFDFF3900D71C93 /* MultiAccountOauthDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB58191EFDFF3900D71C93 /* MultiAccountOauthDemoUITests.swift */; };
+		53DB58281EFE108C00D71C93 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB58271EFE108C00D71C93 /* InfoTableViewCell.swift */; };
+		614478BE6EDC65FB8D917E2F /* Pods_MultiAccountOauthDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860AE0F6F0E1E9EABF5BE095 /* Pods_MultiAccountOauthDemoTests.framework */; };
+		BE5B70C7A5DDFCCDA13BCD95 /* Pods_MultiAccountOauthDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB739F98C32FC584885DEA38 /* Pods_MultiAccountOauthDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53DB580B1EFDFF3900D71C93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53DB57EE1EFDFF3900D71C93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DB57F51EFDFF3900D71C93;
+			remoteInfo = MultiAccountOauthDemo;
+		};
+		53DB58161EFDFF3900D71C93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53DB57EE1EFDFF3900D71C93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DB57F51EFDFF3900D71C93;
+			remoteInfo = MultiAccountOauthDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00020BA489E5A36168E515E3 /* Pods-MultiAccountOauthDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiAccountOauthDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiAccountOauthDemoUITests/Pods-MultiAccountOauthDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0BA76CD81FEDBB4B38443990 /* Pods_MultiAccountOauthDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiAccountOauthDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2678A507D3E4389AE7243C10 /* Pods-MultiAccountOauthDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiAccountOauthDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiAccountOauthDemo/Pods-MultiAccountOauthDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		43FF853EC1F50D95AE2C71BC /* Pods-MultiAccountOauthDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiAccountOauthDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiAccountOauthDemo/Pods-MultiAccountOauthDemo.release.xcconfig"; sourceTree = "<group>"; };
+		455F101E3B1BBC2FE23C71EB /* Pods-MultiAccountOauthDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiAccountOauthDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiAccountOauthDemoTests/Pods-MultiAccountOauthDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53DB57F61EFDFF3900D71C93 /* MultiAccountOauthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiAccountOauthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53DB57F91EFDFF3900D71C93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53DB57FB1EFDFF3900D71C93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53DB57FE1EFDFF3900D71C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53DB58001EFDFF3900D71C93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53DB58031EFDFF3900D71C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53DB58051EFDFF3900D71C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DB580A1EFDFF3900D71C93 /* MultiAccountOauthDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiAccountOauthDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53DB580E1EFDFF3900D71C93 /* MultiAccountOauthDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiAccountOauthDemoTests.swift; sourceTree = "<group>"; };
+		53DB58101EFDFF3900D71C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DB58151EFDFF3900D71C93 /* MultiAccountOauthDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiAccountOauthDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53DB58191EFDFF3900D71C93 /* MultiAccountOauthDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiAccountOauthDemoUITests.swift; sourceTree = "<group>"; };
+		53DB581B1EFDFF3900D71C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DB58271EFE108C00D71C93 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		63CD28C958E0D1C8D383FCC9 /* Pods-MultiAccountOauthDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiAccountOauthDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiAccountOauthDemoTests/Pods-MultiAccountOauthDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		860AE0F6F0E1E9EABF5BE095 /* Pods_MultiAccountOauthDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiAccountOauthDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB739F98C32FC584885DEA38 /* Pods_MultiAccountOauthDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiAccountOauthDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF9073559957918F098AF7D /* Pods-MultiAccountOauthDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiAccountOauthDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiAccountOauthDemoUITests/Pods-MultiAccountOauthDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53DB57F31EFDFF3900D71C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EED278606142C667ABD520 /* Pods_MultiAccountOauthDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB58071EFDFF3900D71C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614478BE6EDC65FB8D917E2F /* Pods_MultiAccountOauthDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB58121EFDFF3900D71C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5B70C7A5DDFCCDA13BCD95 /* Pods_MultiAccountOauthDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		119A009DC04E70D6A56C68BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2678A507D3E4389AE7243C10 /* Pods-MultiAccountOauthDemo.debug.xcconfig */,
+				43FF853EC1F50D95AE2C71BC /* Pods-MultiAccountOauthDemo.release.xcconfig */,
+				455F101E3B1BBC2FE23C71EB /* Pods-MultiAccountOauthDemoTests.debug.xcconfig */,
+				63CD28C958E0D1C8D383FCC9 /* Pods-MultiAccountOauthDemoTests.release.xcconfig */,
+				00020BA489E5A36168E515E3 /* Pods-MultiAccountOauthDemoUITests.debug.xcconfig */,
+				DFF9073559957918F098AF7D /* Pods-MultiAccountOauthDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53DB57ED1EFDFF3900D71C93 = {
+			isa = PBXGroup;
+			children = (
+				53DB57F81EFDFF3900D71C93 /* MultiAccountOauthDemo */,
+				53DB580D1EFDFF3900D71C93 /* MultiAccountOauthDemoTests */,
+				53DB58181EFDFF3900D71C93 /* MultiAccountOauthDemoUITests */,
+				53DB57F71EFDFF3900D71C93 /* Products */,
+				119A009DC04E70D6A56C68BA /* Pods */,
+				8592894ED8C042308262A4EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53DB57F71EFDFF3900D71C93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53DB57F61EFDFF3900D71C93 /* MultiAccountOauthDemo.app */,
+				53DB580A1EFDFF3900D71C93 /* MultiAccountOauthDemoTests.xctest */,
+				53DB58151EFDFF3900D71C93 /* MultiAccountOauthDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53DB57F81EFDFF3900D71C93 /* MultiAccountOauthDemo */ = {
+			isa = PBXGroup;
+			children = (
+				53DB57F91EFDFF3900D71C93 /* AppDelegate.swift */,
+				53DB57FB1EFDFF3900D71C93 /* ViewController.swift */,
+				53DB58271EFE108C00D71C93 /* InfoTableViewCell.swift */,
+				53DB57FD1EFDFF3900D71C93 /* Main.storyboard */,
+				53DB58001EFDFF3900D71C93 /* Assets.xcassets */,
+				53DB58021EFDFF3900D71C93 /* LaunchScreen.storyboard */,
+				53DB58051EFDFF3900D71C93 /* Info.plist */,
+			);
+			path = MultiAccountOauthDemo;
+			sourceTree = "<group>";
+		};
+		53DB580D1EFDFF3900D71C93 /* MultiAccountOauthDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				53DB580E1EFDFF3900D71C93 /* MultiAccountOauthDemoTests.swift */,
+				53DB58101EFDFF3900D71C93 /* Info.plist */,
+			);
+			path = MultiAccountOauthDemoTests;
+			sourceTree = "<group>";
+		};
+		53DB58181EFDFF3900D71C93 /* MultiAccountOauthDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53DB58191EFDFF3900D71C93 /* MultiAccountOauthDemoUITests.swift */,
+				53DB581B1EFDFF3900D71C93 /* Info.plist */,
+			);
+			path = MultiAccountOauthDemoUITests;
+			sourceTree = "<group>";
+		};
+		8592894ED8C042308262A4EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BA76CD81FEDBB4B38443990 /* Pods_MultiAccountOauthDemo.framework */,
+				860AE0F6F0E1E9EABF5BE095 /* Pods_MultiAccountOauthDemoTests.framework */,
+				DB739F98C32FC584885DEA38 /* Pods_MultiAccountOauthDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53DB57F51EFDFF3900D71C93 /* MultiAccountOauthDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53DB581E1EFDFF3900D71C93 /* Build configuration list for PBXNativeTarget "MultiAccountOauthDemo" */;
+			buildPhases = (
+				A7A98DE481BD42FF814CDE51 /* [CP] Check Pods Manifest.lock */,
+				53DB57F21EFDFF3900D71C93 /* Sources */,
+				53DB57F31EFDFF3900D71C93 /* Frameworks */,
+				53DB57F41EFDFF3900D71C93 /* Resources */,
+				1185D5B72871396FD44C0AA5 /* [CP] Embed Pods Frameworks */,
+				423B0F387AEC105C397FB21E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiAccountOauthDemo;
+			productName = MultiAccountOauthDemo;
+			productReference = 53DB57F61EFDFF3900D71C93 /* MultiAccountOauthDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53DB58091EFDFF3900D71C93 /* MultiAccountOauthDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53DB58211EFDFF3900D71C93 /* Build configuration list for PBXNativeTarget "MultiAccountOauthDemoTests" */;
+			buildPhases = (
+				867538DC7602C27DE9FE7E67 /* [CP] Check Pods Manifest.lock */,
+				53DB58061EFDFF3900D71C93 /* Sources */,
+				53DB58071EFDFF3900D71C93 /* Frameworks */,
+				53DB58081EFDFF3900D71C93 /* Resources */,
+				2611F990E8E2D6756CAB6E47 /* [CP] Embed Pods Frameworks */,
+				87F21C5FFA7BE1229F909D7F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53DB580C1EFDFF3900D71C93 /* PBXTargetDependency */,
+			);
+			name = MultiAccountOauthDemoTests;
+			productName = MultiAccountOauthDemoTests;
+			productReference = 53DB580A1EFDFF3900D71C93 /* MultiAccountOauthDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53DB58141EFDFF3900D71C93 /* MultiAccountOauthDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53DB58241EFDFF3900D71C93 /* Build configuration list for PBXNativeTarget "MultiAccountOauthDemoUITests" */;
+			buildPhases = (
+				ACFD57EF8E46B149DC2E7C94 /* [CP] Check Pods Manifest.lock */,
+				53DB58111EFDFF3900D71C93 /* Sources */,
+				53DB58121EFDFF3900D71C93 /* Frameworks */,
+				53DB58131EFDFF3900D71C93 /* Resources */,
+				5EB86841219F60C0F715955F /* [CP] Embed Pods Frameworks */,
+				F6BB87BA4CAEEDA5A06A9369 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53DB58171EFDFF3900D71C93 /* PBXTargetDependency */,
+			);
+			name = MultiAccountOauthDemoUITests;
+			productName = MultiAccountOauthDemoUITests;
+			productReference = 53DB58151EFDFF3900D71C93 /* MultiAccountOauthDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53DB57EE1EFDFF3900D71C93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Thywis inc.";
+				TargetAttributes = {
+					53DB57F51EFDFF3900D71C93 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BW259GUV6N;
+						ProvisioningStyle = Automatic;
+					};
+					53DB58091EFDFF3900D71C93 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BW259GUV6N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53DB57F51EFDFF3900D71C93;
+					};
+					53DB58141EFDFF3900D71C93 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BW259GUV6N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53DB57F51EFDFF3900D71C93;
+					};
+				};
+			};
+			buildConfigurationList = 53DB57F11EFDFF3900D71C93 /* Build configuration list for PBXProject "MultiAccountOauthDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53DB57ED1EFDFF3900D71C93;
+			productRefGroup = 53DB57F71EFDFF3900D71C93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53DB57F51EFDFF3900D71C93 /* MultiAccountOauthDemo */,
+				53DB58091EFDFF3900D71C93 /* MultiAccountOauthDemoTests */,
+				53DB58141EFDFF3900D71C93 /* MultiAccountOauthDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53DB57F41EFDFF3900D71C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DB58041EFDFF3900D71C93 /* LaunchScreen.storyboard in Resources */,
+				53DB58011EFDFF3900D71C93 /* Assets.xcassets in Resources */,
+				53DB57FF1EFDFF3900D71C93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB58081EFDFF3900D71C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB58131EFDFF3900D71C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1185D5B72871396FD44C0AA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiAccountOauthDemo/Pods-MultiAccountOauthDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2611F990E8E2D6756CAB6E47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiAccountOauthDemoTests/Pods-MultiAccountOauthDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		423B0F387AEC105C397FB21E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiAccountOauthDemo/Pods-MultiAccountOauthDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EB86841219F60C0F715955F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiAccountOauthDemoUITests/Pods-MultiAccountOauthDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		867538DC7602C27DE9FE7E67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87F21C5FFA7BE1229F909D7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiAccountOauthDemoTests/Pods-MultiAccountOauthDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A98DE481BD42FF814CDE51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ACFD57EF8E46B149DC2E7C94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6BB87BA4CAEEDA5A06A9369 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiAccountOauthDemoUITests/Pods-MultiAccountOauthDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53DB57F21EFDFF3900D71C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DB58281EFE108C00D71C93 /* InfoTableViewCell.swift in Sources */,
+				53DB57FC1EFDFF3900D71C93 /* ViewController.swift in Sources */,
+				53DB57FA1EFDFF3900D71C93 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB58061EFDFF3900D71C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DB580F1EFDFF3900D71C93 /* MultiAccountOauthDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB58111EFDFF3900D71C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DB581A1EFDFF3900D71C93 /* MultiAccountOauthDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53DB580C1EFDFF3900D71C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53DB57F51EFDFF3900D71C93 /* MultiAccountOauthDemo */;
+			targetProxy = 53DB580B1EFDFF3900D71C93 /* PBXContainerItemProxy */;
+		};
+		53DB58171EFDFF3900D71C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53DB57F51EFDFF3900D71C93 /* MultiAccountOauthDemo */;
+			targetProxy = 53DB58161EFDFF3900D71C93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53DB57FD1EFDFF3900D71C93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53DB57FE1EFDFF3900D71C93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53DB58021EFDFF3900D71C93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53DB58031EFDFF3900D71C93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53DB581C1EFDFF3900D71C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53DB581D1EFDFF3900D71C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53DB581F1EFDFF3900D71C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2678A507D3E4389AE7243C10 /* Pods-MultiAccountOauthDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BW259GUV6N;
+				INFOPLIST_FILE = MultiAccountOauthDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thywis.MultiAccountOauthDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		53DB58201EFDFF3900D71C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43FF853EC1F50D95AE2C71BC /* Pods-MultiAccountOauthDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BW259GUV6N;
+				INFOPLIST_FILE = MultiAccountOauthDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thywis.MultiAccountOauthDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		53DB58221EFDFF3900D71C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455F101E3B1BBC2FE23C71EB /* Pods-MultiAccountOauthDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BW259GUV6N;
+				INFOPLIST_FILE = MultiAccountOauthDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thywis.MultiAccountOauthDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiAccountOauthDemo.app/MultiAccountOauthDemo";
+			};
+			name = Debug;
+		};
+		53DB58231EFDFF3900D71C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63CD28C958E0D1C8D383FCC9 /* Pods-MultiAccountOauthDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BW259GUV6N;
+				INFOPLIST_FILE = MultiAccountOauthDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thywis.MultiAccountOauthDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiAccountOauthDemo.app/MultiAccountOauthDemo";
+			};
+			name = Release;
+		};
+		53DB58251EFDFF3900D71C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00020BA489E5A36168E515E3 /* Pods-MultiAccountOauthDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BW259GUV6N;
+				INFOPLIST_FILE = MultiAccountOauthDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thywis.MultiAccountOauthDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MultiAccountOauthDemo;
+			};
+			name = Debug;
+		};
+		53DB58261EFDFF3900D71C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFF9073559957918F098AF7D /* Pods-MultiAccountOauthDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BW259GUV6N;
+				INFOPLIST_FILE = MultiAccountOauthDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thywis.MultiAccountOauthDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MultiAccountOauthDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53DB57F11EFDFF3900D71C93 /* Build configuration list for PBXProject "MultiAccountOauthDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53DB581C1EFDFF3900D71C93 /* Debug */,
+				53DB581D1EFDFF3900D71C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53DB581E1EFDFF3900D71C93 /* Build configuration list for PBXNativeTarget "MultiAccountOauthDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53DB581F1EFDFF3900D71C93 /* Debug */,
+				53DB58201EFDFF3900D71C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53DB58211EFDFF3900D71C93 /* Build configuration list for PBXNativeTarget "MultiAccountOauthDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53DB58221EFDFF3900D71C93 /* Debug */,
+				53DB58231EFDFF3900D71C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53DB58241EFDFF3900D71C93 /* Build configuration list for PBXNativeTarget "MultiAccountOauthDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53DB58251EFDFF3900D71C93 /* Debug */,
+				53DB58261EFDFF3900D71C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53DB57EE1EFDFF3900D71C93 /* Project object */;
+}
