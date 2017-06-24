@@ -27,6 +27,9 @@ public class OauthManager: DynamicStorage {
     public func configure(cliendId: String, scope: [String], urlScheme: String, serverCliendId: String?) {
         self.cliendId = cliendId
         self.scope = scope
+        if scope.contains("profile") == false {
+            self.scope.append("profile")
+        }
         self.urlScheme = urlScheme
         self.serverClientId = serverCliendId
     }
