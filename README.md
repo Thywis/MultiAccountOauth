@@ -18,7 +18,18 @@ pod 'MultiAccountOAuth'
 
 ### Step by Step Guide
 
-## AppDelegate.swift
+## 1. Google Credential
+
+* Create an iOS Applicaiton in Google API Console. Make sure you have the correct client id and URL scheme.
+
+<img src="img/instruction1" width="888" height="194"/>
+
+* Go to Info.plist in your iOS application, add the URL scheme to URL types.
+
+<img src="img/instruction2" width="1080" height="99"/>
+
+## 2. AppDelegate.swift
+
 Add you google client id and url Scheme to the framework. You can also provide a server client if you'd like to enable backend access
 
 ```swift
@@ -28,26 +39,24 @@ import MultiAccountOauth
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-var window: UIWindow?
+    var window: UIWindow?
 
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-OauthManager.sharedInstance.configure(cliendId: "269767058620-boug6i0q16vsh7a90cf7341skc1j91sj.apps.googleusercontent.com", scope: ["email"], urlScheme: "com.googleusercontent.apps.269767058620-boug6i0q16vsh7a90cf7341skc1j91sj", serverCliendId: nil)
+        OauthManager.sharedInstance.configure(cliendId: "269767058620-boug6i0q16vsh7a90cf7341skc1j91sj.apps.googleusercontent.com", scope: ["email"], urlScheme: "com.googleusercontent.apps.269767058620-boug6i0q16vsh7a90cf7341skc1j91sj", serverCliendId: nil)
 
-return true
-}
+        return true
+    }
 
-func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-
-if let oauthSession = OauthManager.sharedInstance.oauthSession {
-if oauthSession.resumeAuthorizationFlow(with: url) {
-OauthManager.sharedInstance.oauthSession = nil
-return true
-}
-}
-return false
-}
-
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        if let oauthSession = OauthManager.sharedInstance.oauthSession {
+            if oauthSession.resumeAuthorizationFlow(with: url) {
+                OauthManager.sharedInstance.oauthSession = nil
+                return true
+            }
+        }
+        return false
+    }
 }
 
 ```
